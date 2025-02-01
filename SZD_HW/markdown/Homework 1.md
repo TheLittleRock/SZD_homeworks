@@ -13,6 +13,8 @@ def carl_friedrich(x,a,mu,sig):
     return a * np.exp(-(x - mu)**2/(2*sig**2))
 ```
 
+Setting the parameters for matplotlib backend. Using TeX as backend for text. 
+
 
 ```python
 params = {
@@ -34,6 +36,8 @@ plt.rcParams.update(params)
 ```
 
 ## Getting data
+
+Loading provided data and generating datasets based on parameters $\mu$ and $\sigma$ of Gaussian distribution. Which bins are used as parameters for sampled gaussian distribution is given by `selected_bins`. Selected bins and their count can be changed and the code should still work.
 
 
 ```python
@@ -114,7 +118,7 @@ plt.show()
 
 
     
-![png](Homework%201_files/Homework%201_9_0.png)
+![png](Homework%201_files/Homework%201_11_0.png)
     
 
 

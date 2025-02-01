@@ -1,0 +1,12 @@
+            - name: Convert Jupyter Notebooks to Github Pages
+  # You may pin to the exact commit or the version.
+  # uses: victor-public/jupyter-to-pages@77f09bdf67465cb2c1825f5dfa7453b64c1e318d
+  uses: victor-public/jupyter-to-pages@v1
+  with:
+    # Whether or not to show the code in the cells
+    show-cells: # optional
+    # Path to a file listing the requirements to run the notebooks.
+    dependencies: # optional, default is requirements.txt
+    # Path to the folder that contains the Notebooks
+    source: # optional
+          

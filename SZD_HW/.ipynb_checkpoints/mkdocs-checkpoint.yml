@@ -1,20 +1,40 @@
 site_name: SZD Homeworks
 docs_dir: markdown
+repo_url: https://github.com/TheLittleRock/SZD_homeworks
 theme:
+  icon:
+    repo: fontawesome/brands/github
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - content.code.copy
+    - toc.integrate
+    - navigation.tabs
   palette: 
    
     # Palette toggle for dark mode
     - scheme: slate
       primary: teal
-      accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
     # Palette toggle for light mode
     - scheme: default
       primary: teal
-      accent: teal
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-night
         name: Switch to dark mode
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
+extra_css:
+  - stylesheets/extra.css

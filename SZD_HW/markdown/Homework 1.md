@@ -33,7 +33,7 @@ plt.rcParams.update(params)
 
 ```
 
-## Get data:
+## Getting data
 
 
 ```python
@@ -59,7 +59,7 @@ for row in dataSelected:  #iterates over data. Data in format: [index | hpp | hp
 #_, hpp_mu, hpp_sig, hAA_mu, hAA_sig = dataSelected.T
 ```
 
-## Fit:
+## Fit
 
 
 ```python
@@ -83,7 +83,7 @@ for hist in ratios:
     paramsR.append(popt)
 ```
 
-## Plot:
+## Plotting
 
 
 ```python
@@ -114,7 +114,7 @@ plt.show()
 
 
     
-![svg](Homework%201_files/Homework%201_9_0.svg)
+![png](Homework%201_files/Homework%201_9_0.png)
     
 
 

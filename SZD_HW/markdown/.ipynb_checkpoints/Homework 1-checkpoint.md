@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # HOMEWORK I
 
 ## Imports and stuff

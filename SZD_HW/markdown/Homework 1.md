@@ -96,9 +96,9 @@ fig, axs = plt.subplots(bins, 3, layout="constrained", figsize=(12, 2*bins))
 
 for (col1, col2, col3), hAA, hpp, ratio, legend, pL, pR, x, limit in zip(axs, hAA_samples, hpp_samples, ratios, dataSelected, paramsL, paramsR, xrange, limits): #iteration through all of the data needed for plotting
     
-    col1.hist(hAA, bins = 50, color='lightskyblue', ec='dodgerblue', alpha=.8, label = '$\mu = {:.1e}$ \n $\sigma = {:.1e}$'.format(legend[3],legend[4])) #col1 corresponds to hAA
-    col2.hist(hpp, bins = 50, color='seagreen', ec='darkgreen', alpha=.8, label = '$\mu = {:.1e}$ \n $\sigma = {:.1e}$'.format(legend[1],legend[2])) #col2 corresponds to hpp
-    col3.hist(ratio, bins = 50, color='lightcoral', ec='dimgrey', alpha=.8) #col3 corresponds to Ratios
+    col1.hist(hAA, bins = 50, color='lightskyblue', edgecolor='dodgerblue', alpha=.8, label = '$\mu = {:.1e}$ \n $\sigma = {:.1e}$'.format(legend[3],legend[4])) #col1 corresponds to hAA
+    col2.hist(hpp, bins = 50, color='seagreen', edgecolor='darkgreen', alpha=.8, label = '$\mu = {:.1e}$ \n $\sigma = {:.1e}$'.format(legend[1],legend[2])) #col2 corresponds to hpp
+    col3.hist(ratio, bins = 50, color='lightcoral', edgecolor='dimgrey', alpha=.8) #col3 corresponds to Ratios
 
     col3.plot(x[:limit+1], carl_friedrich(x[:limit+1],*pL),c='navy', lw=1, label = '$\sigma_l = {:.2e}$'.format(np.abs(pL[2]))) #plot of the left fit
     col3.plot(x[limit:], carl_friedrich(x[limit:],*pR), c='crimson', lw=1, label = '$\sigma_r = {:.2e}$'.format(np.abs(pR[2]))) #plot of the right fit   

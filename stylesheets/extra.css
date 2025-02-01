@@ -1,0 +1,10 @@
+.highlighttable {
+    font-size: 0.65rem ;
+}
+
+.md-content__inner {
+    font-size: 0.7rem ;
+}
+.md-main__inner.md-grid {
+    max-width: 1800px;
+}
